@@ -50,9 +50,7 @@
             "groups": [
               {
                 "group": "API Documentation",
-                "pages": [
-                  "en/api-reference/introduction"
-                ]
+                "pages": ["en/api-reference/introduction"]
               },
               {
                 "group": "Endpoints",
@@ -107,9 +105,7 @@
             "groups": [
               {
                 "group": "Documentation API",
-                "pages": [
-                  "fr/api-reference/introduction"
-                ]
+                "pages": ["fr/api-reference/introduction"]
               },
               {
                 "group": "Endpoints",
@@ -131,15 +127,9 @@
     "dark": "/logo/teamova-dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "App Teamova",
-        "href": "https://app.teamova.net"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Get Started",
+      "label": "App Teamova",
       "href": "https://app.teamova.net"
     }
   },
