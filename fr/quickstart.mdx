@@ -1,0 +1,147 @@
+---
+title: "Démarrage Rapide"
+description: "Lancez Teamova localement en 5 minutes"
+---
+
+## Prérequis
+
+Assurez-vous d'avoir installé les éléments suivants :
+
+- **Node.js** 18+ et **pnpm** 8+
+- **Docker** et **Docker Compose v2**
+- **Git** pour le contrôle de version
+
+<Check>
+  Vous pouvez vérifier vos installations avec :
+  ```bash
+  node --version  # Devrait être >= 18
+  pnpm --version  # Devrait être >= 8
+  docker compose version  # Devrait être v2.x
+  ```
+</Check>
+
+## 1. Cloner le Dépôt
+
+```bash
+git clone https://github.com/teamova/teamova.git
+cd teamova
+```
+
+## 2. Installer les Dépendances
+
+```bash
+pnpm install
+```
+
+Cela installera toutes les dépendances du monorepo en utilisant le graphe de dépendances de Turborepo.
+
+## 3. Configurer les Variables d'Environnement
+
+Copiez les templates d'environnement :
+
+```bash
+# Backend Core
+cp backend/core/.env.example backend/core/.env
+
+# Backend Planning Poker
+cp backend/microservices/planning-poker/.env.example backend/microservices/planning-poker/.env
+
+# Frontend
+cp frontend/apps/web/.env.example frontend/apps/web/.env.local
+```
+
+<Note>
+  Les valeurs par défaut dans les fichiers `.env.example` sont configurées pour le développement local.
+  Vous n'avez généralement pas besoin de les modifier pour commencer.
+</Note>
+
+## 4. Démarrer les Services d'Infrastructure
+
+Démarrez PostgreSQL, Redis et OpenFGA :
+
+```bash
+docker compose up -d
+```
+
+<Info>
+  Cela démarrera :
+  - **PostgreSQL** sur le port 5432
+  - **Redis** sur le port 6379
+  - **OpenFGA** sur le port 8080 (service d'autorisation - en développement)
+</Info>
+
+## 5. Exécuter les Migrations de Base de Données
+
+Appliquez les migrations de base de données pour les deux services :
+
+```bash
+# Migrations backend core
+cd backend/core
+npm run migration:run
+
+# Migrations backend Planning Poker
+cd ../microservices/planning-poker
+npm run migration:run
+```
+
+## 6. Peupler la Base de Données (Optionnel)
+
+Ajoutez des données d'exemple pour le développement :
+
+```bash
+# Depuis le répertoire racine
+cd backend/core
+npm run seed
+
+cd ../microservices/planning-poker
+npm run seed
+```
+
+## 7. Démarrer le Serveur de Développement
+
+Depuis le répertoire racine, démarrez tous les services :
+
+```bash
+pnpm dev
+```
+
+Cela démarrera :
+- **Frontend** - http://localhost:3001
+- **Backend Core** - http://localhost:3004
+- **Backend Planning Poker** - http://localhost:3002
+
+<Success>
+  Vous êtes prêt ! Ouvrez [http://localhost:3001](http://localhost:3001) dans votre navigateur.
+</Success>
+
+## Identifiants de Test
+
+Utilisez ces identifiants pour vous connecter :
+
+<CodeGroup>
+```text Email
+admin@test.com
+```
+
+```text Mot de passe
+Test123!
+```
+</CodeGroup>
+
+## Prochaines Étapes
+
+<CardGroup cols={2}>
+  <Card
+    title="Explorer l'Architecture"
+    icon="building"
+  >
+    Découvrez notre architecture microservices
+  </Card>
+  <Card
+    title="Documentation API"
+    icon="book"
+    href="/api-reference/introduction"
+  >
+    Explorez les endpoints de l'API
+  </Card>
+</CardGroup>

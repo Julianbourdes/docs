@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Teamova Documentation",
+  "name": "Teamova",
   "logo": {
     "dark": "/logo/teamova-dark.svg",
     "light": "/logo/teamova-light.svg",
@@ -20,6 +20,16 @@
       "to": "#7C3AED"
     }
   },
+  "versions": [
+    {
+      "name": "English",
+      "path": "en"
+    },
+    {
+      "name": "Français",
+      "path": "fr"
+    }
+  ],
   "topbarLinks": [
     {
       "name": "Support",
@@ -34,10 +44,6 @@
     {
       "name": "API Reference",
       "url": "api-reference"
-    },
-    {
-      "name": "Changelog",
-      "url": "changelog"
     }
   ],
   "anchors": [
@@ -61,43 +67,20 @@
     {
       "group": "Getting Started",
       "pages": [
-        "index",
-        "quickstart",
-        "development"
+        "introduction",
+        "quickstart"
       ]
     },
     {
-      "group": "AI Tools",
+      "group": "What's New",
       "pages": [
-        "ai-tools/cursor",
-        "ai-tools/claude-code",
-        "ai-tools/windsurf"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/reusable-snippets"
+        "changelog"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoints",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete",
-        "api-reference/endpoint/webhook"
       ]
     }
   ],
