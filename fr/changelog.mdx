@@ -1,224 +1,113 @@
 ---
-title: Changelog
-description: 'Suivez toutes les mises à jour, améliorations et corrections de bugs de la plateforme Teamova'
+title: Quoi de Neuf
+description: 'Dernières mises à jour et améliorations de Teamova'
 ---
 
-<Update label="Non publié" tags={["Nouvelles fonctionnalités", "Améliorations", "Corrections"]} rss={{ title: "SSO Multi-fournisseurs, Améliorations des Formulaires, Refonte de la Documentation" }}>
+<Update label="Février 2026" tags={["Nouvelles fonctionnalités", "Améliorations"]}>
 
-## Authentification & SSO
+## Connectez-vous À Votre Façon
 
-### Intégration SSO Multi-fournisseurs
-Intégration OAuth complète pour les besoins d'authentification d'entreprise :
-- **OAuth Google, Microsoft et GitHub** - Implémentation complète (Phase 1-5)
-- **Interface Comptes Connectés** - Gérer plusieurs fournisseurs SSO dans les paramètres du compte
-- **Liaison/Déliaison des Comptes SSO** - Lier et délier les fournisseurs OAuth des comptes existants
-- **Acceptation d'Invitations SSO** - Accepter les invitations en utilisant n'importe quel fournisseur SSO configuré
-- **Fonction Définir un Mot de Passe** - Permettre aux utilisateurs SSO de définir un mot de passe de secours
-- **Gestion des Erreurs OAuth** - Messages d'erreur gracieux sur la page de connexion pour les échecs OAuth
-- **Filtre d'Exception OAuth** - Gestion centralisée des exceptions pour les flux OAuth
+Vous pouvez maintenant vous connecter à Teamova avec votre compte préféré :
 
-## Améliorations Formulaires & Interface
+- **Compte Google** - Connectez-vous avec votre espace de travail Google
+- **Compte Microsoft** - Utilisez vos identifiants Microsoft 365
+- **Compte GitHub** - Connectez-vous avec votre identité GitHub
 
-### Indicateurs Requis/Optionnel
-Indicateurs visuels pour les champs de formulaire sur tous les formulaires pour une meilleure UX :
-- Formulaires de paramètres Organisation et Équipe
-- Modales Inviter et Changer de Rôle
-- Modale de Connexion Jira Planning Poker
-- Formulaires des paramètres du compte
+### Connectez Plusieurs Comptes
 
-### Validation des Formulaires
-- **Meilleure gestion des champs optionnels** et valeurs vides
-- **Champ URL Avatar** - Correction de l'affichage des astérisques et persistance des valeurs vides
-- **Doubles Astérisques** - Correction des indicateurs requis dupliqués
-- **Détection des Champs Optionnels** - Détection améliorée des champs optionnels vs requis
-- **RadioGroup** - Suppression de l'attribut 'required' conflictuel empêchant la soumission du formulaire
-- **Débordement de Texte** - Correction des problèmes de retour à la ligne dans les boutons d'inscription par mot de passe
+Liez tous vos comptes au même endroit. Passez facilement d'une méthode de connexion à l'autre (Google, Microsoft, GitHub) depuis vos paramètres.
 
-## Planning Poker
+### Définissez un Mot de Passe de Secours
 
-### Notifications en Temps Réel
-- **Notifications de Changement de Rôle des Participants** - Notifications WebSocket en temps réel pour les mises à jour de rôle
-- **Notifications Toast** - Retour d'information sur la révocation des invitations
+Pour plus de flexibilité, vous pouvez maintenant définir un mot de passe même si vous vous êtes inscrit avec Google, Microsoft ou GitHub. Parfait quand vous avez besoin d'une méthode de connexion alternative.
 
-### Corrections de Bugs
-- **Bug de Changement de Rôle des Participants (JUL-210)** - Correction des changements de rôle des participants inter-sessions
-- **Nommage des Sessions** - Utilisation de `session.name` au lieu de `session.title` dans les logs
-- **Diffusion WebSocket** - Correction de la diffusion de la liste des participants avec logs complets
+## Formulaires Améliorés
 
-## Documentation (JUL-214)
+Nous avons rendu les formulaires plus clairs et plus faciles à utiliser :
 
-### Structure de Documentation Complète
-Refonte complète de la documentation avec une organisation claire :
-- **CLAUDE.md** - Règles Linear, Notion, Docker et développement
-- **Meilleures pratiques SaaS détaillées** dans ARCHITECTURE.md
-- **Templates de configuration d'environnement** - Fichiers .env.example pour tous les services
-- **Distinction claire** entre fonctionnalités implémentées et planifiées
-- **Nettoyage de la Documentation** - Suppression des fichiers de documentation obsolètes et legacy
-- **Structure de Documentation** - Division de CLAUDE.md en sections focalisées avec références
+- De meilleurs indicateurs visuels montrent quels champs sont obligatoires
+- Mise en page plus claire dans les paramètres d'organisation, la gestion d'équipe et le Planning Poker
+- Messages d'erreur améliorés pour vous aider à compléter les formulaires plus rapidement
 
-## Base de Données & Infrastructure
+## Améliorations Planning Poker
 
-### Corrections de Migrations
-- Ajout de guillemets pour les noms de colonnes camelCase pour la compatibilité PostgreSQL
-- Correction du cast du type enum pour le champ fournisseur SSO
-- Désactivation explicite du logging TypeORM en production
+### Notifications Instantanées
 
-### Corrections OAuth
-- **Gestion de l'État OAuth** - Correction du stockage et de la récupération de stateId dans les flux OAuth Google, Microsoft et GitHub
-- **Auto-parsing Upstash** - Gestion de l'analyse JSON automatique d'Upstash Redis dans la récupération de l'état OAuth
-- **Récupération du Token JWT** - Correction de l'extraction du token JWT depuis les cookies pour la liaison SSO
-- **Redirection OAuth** - Retour de l'URL de redirection OAuth en JSON au lieu d'une redirection HTTP
-- **Rewrites API** - Suppression des rewrites bloquants pour les routes de liaison/déliaison SSO
+Restez synchronisé avec votre équipe :
+- Voyez les notifications en temps réel quand les rôles changent pendant une session
+- Recevez un retour instantané quand des invitations sont envoyées ou révoquées
 
-## Dépendances
-- Mise à jour de pnpm-lock.yaml avec passport-microsoft et passport-github2
+### Collaboration Plus Fluide
+
+Nous avons amélioré l'expérience en temps réel pour que tout le monde reste sur la même longueur d'onde pendant les sessions d'estimation.
 
 </Update>
 
-<Update label="Janvier 2026" tags={["Nouvelles fonctionnalités"]} rss={{ title: "Version Production v0.1.0 - Plateforme Prête pour l'Entreprise" }}>
+<Update label="Janvier 2026" tags={["Nouvelles fonctionnalités"]}>
 
-## 🎉 Première Version de Production
+## Bienvenue sur Teamova
 
-Première version prête pour la production de la plateforme Teamova, comprenant :
-- **Authentification de Base** - Authentification email/mot de passe avec OAuth Google
-- **Module Planning Poker** - Outil d'estimation agile de niveau entreprise avec collaboration en temps réel
-- **Multi-tenancy** - Isolation basée sur les organisations avec routage par chemin
-- **Internationalisation** - Support bilingue complet (Français/Anglais)
+Teamova est maintenant disponible ! Voici ce que vous pouvez faire :
 
-## ✨ Fonctionnalités Principales
+### Planning Poker
 
-### Gestion des Sessions
-Gestion complète du cycle de vie des sessions :
-- **Création de Sessions** - Créer des sessions de planning poker avec noms personnalisés et sélection de deck
-- **Codes de Session** - Codes uniques de 6 caractères pour rejoindre facilement les sessions
-- **Table des Sessions** - Table avancée avec recherche, filtres, tri et opérations en masse
-- **Paramètres de Session** - Modes de vote configurables (anonyme, révélation auto, afficher les cartes)
-- **Archive des Sessions** - Archiver les sessions terminées pour le suivi historique
+Organisez des sessions d'estimation agile avec votre équipe en temps réel :
 
-### Système de Vote
-Vote collaboratif en temps réel :
-- **Vote en Temps Réel** - Synchronisation instantanée des votes basée sur WebSocket
-- **Decks Multiples** - Fibonacci, Tailles T-Shirt, Puissances de 2 et decks personnalisés
-- **États du Vote** - Workflow Prêt → Vote → Révélé avec retour visuel
-- **Distribution des Votes** - Graphiques en temps réel montrant la distribution des votes et le consensus
-- **Estimation Finale** - Définition de l'estimation finale contrôlée par l'hôte avec suggestions intelligentes
+**Créer des Sessions**
+- Démarrez une session avec un code unique que tout le monde peut rejoindre
+- Choisissez parmi Fibonacci, Tailles T-Shirt, Puissances de 2, ou créez des decks personnalisés
+- Configurez les règles de vote (vote anonyme, révélation auto, afficher les cartes)
 
-### Gestion des Stories
-Gestion complète des stories :
-- **CRUD des Stories** - Opérations complètes de création, lecture, mise à jour, suppression
-- **Détails des Stories** - Descriptions en texte enrichi, type, priorité et tags
-- **Stories de Référence** - Marquer les stories de référence pour l'estimation relative
-- **Import de Stories** - Importer plusieurs stories depuis Jira avec métadonnées
-- **Export de Stories** - Exporter les résultats de session au format CSV
+**Collaborer en Temps Réel**
+- Votez simultanément avec votre équipe
+- Voyez les résultats instantanément quand les votes sont révélés
+- Suivez le consensus avec des graphiques de distribution visuels
+- Définissez les estimations finales avec des suggestions intelligentes
 
-### Gestion des Participants
-Cycle de vie complet des participants :
-- **Système de Rôles** - Rôles Hôte, Participant et Spectateur avec permissions appropriées
-- **Gestion des Rôles** - Promouvoir/rétrograder les participants avec mises à jour en temps réel
-- **Liste des Participants** - Suivi en direct des participants avec statut de vote
-- **Fonctionnalité d'Exclusion** - L'hôte peut retirer les participants perturbateurs
+**Gérer les Stories**
+- Ajoutez des stories manuellement ou importez depuis Jira
+- Incluez des descriptions, priorités et tags
+- Marquez des stories de référence
+- Exportez les résultats en CSV
+
+**Gestion d'Équipe**
+- Attribuez des rôles : Hôte, Participant ou Spectateur
+- Changez les rôles pendant la session
+- Voyez qui a voté et qui est encore en train de décider
 
 ### Intégration Jira
-Synchronisation bidirectionnelle Jira :
-- **Import de Projet** - Parcourir et importer des stories depuis les projets Jira
-- **Synchronisation des Issues** - Synchronisation bidirectionnelle des story points avec Jira
-- **Import Intelligent** - Filtrer par type d'issue, statut et assigné
-- **Paramètres Jira** - Configurer la connexion par session ou globalement
 
-### Decks Personnalisés
-Échelles d'estimation flexibles :
-- **Création de Decks** - Créer des decks de cartes personnalisés avec valeurs uniques
-- **Templates de Decks** - Templates pré-construits pour les échelles d'estimation courantes
-- **Gestion des Decks** - Éditer, dupliquer et supprimer les decks personnalisés
-- **Partage de Decks** - Partager les decks personnalisés entre les sessions
+Connectez votre espace de travail Jira :
+- Importez des stories directement dans vos sessions Planning Poker
+- Synchronisez automatiquement les résultats d'estimation vers Jira
+- Filtrez par type d'issue, statut et assigné
 
-### Fonctionnalités Avancées
-Capacités de niveau entreprise :
-- **Système de Minuteur** - Minuteurs de vote configurables avec pause/reprise
-- **Suggestions d'Estimation** - Suggestions alimentées par l'IA basées sur l'analyse des stories
-- **Vote Anonyme** - Cacher les votes individuels jusqu'à la révélation
-- **Mode Spectateur** - Vue d'observateur sans capacités de vote
-- **Système de Tutoriel** - Intégration interactive pour les nouveaux utilisateurs
-- **Mode Sombre** - Support complet du thème sombre avec détection des préférences système
+### Decks d'Estimation Personnalisés
 
-## 🏗️ Implémentation Technique
+Créez des decks qui correspondent au workflow de votre équipe :
+- Construisez des decks personnalisés avec vos propres valeurs
+- Utilisez des templates pré-construits
+- Partagez les decks entre les sessions
+- Dupliquez et modifiez les decks existants
 
-### Architecture
-Stack moderne et évolutif :
-- **Frontend** - Next.js 15 App Router avec TypeScript
-- **Backend** - Microservices NestJS (Core + Planning Poker) avec TypeORM
-- **Base de Données** - PostgreSQL avec cache Redis
-- **Temps Réel** - Implémentation WebSocket Socket.io
-- **Monorepo** - Turborepo avec workspaces pnpm
-- **Bibliothèque UI** - shadcn/ui avec Tailwind CSS
-- **i18n** - next-intl avec gestion des locales basée sur les cookies
+### Fonctionnalités Supplémentaires
 
-### Infrastructure
-Déploiement prêt pour la production :
-- **Docker** - Conteneurisation PostgreSQL et Redis
-- **Migrations** - Système complet de migrations de base de données
-- **Documentation API** - Spécification Swagger/OpenAPI
-- **Sécurité des Types** - Types TypeScript partagés à travers la stack
-- **Gestion des Erreurs** - Limites d'erreur et fallbacks complets
+**Minuteurs de Vote** - Définissez des limites de temps pour les tours de vote
 
-## 📊 Performance
+**Vote Anonyme** - Masquez les votes jusqu'à ce que tout le monde ait voté
 
-Optimisé pour l'échelle :
-- **Chargement de Page** - < 2 secondes de temps de chargement initial
-- **Mises à Jour en Temps Réel** - < 50ms de livraison des messages WebSocket
-- **Utilisateurs Concurrents** - Testé avec plus de 50 participants par session
-- **Base de Données** - Requêtes optimisées avec indexation appropriée
+**Mode Spectateur** - Laissez les parties prenantes observer sans voter
 
-## 🔒 Sécurité
+**Archive de Sessions** - Conservez l'historique des sessions d'estimation passées
 
-Sécurité de niveau entreprise :
-- **Validation des Entrées** - Toutes les entrées API validées avec class-validator
-- **Sécurité WebSocket** - Authentification basée sur les sessions
-- **Isolation des Données** - Isolation appropriée des données de session
-- **Limitation de Débit** - Protection contre les abus
-- **CORS** - Correctement configuré pour la communication frontend/backend
+**Mode Sombre** - Travaillez confortablement avec le thème sombre automatique
 
-## 🐛 Problèmes Connus
-
-Éléments sur la feuille de route :
-- Design responsive mobile pas encore optimisé
-- Fonctionnalités du tableau de bord analytique limitées
-- Système d'autorisation OpenFGA partiellement implémenté
+**Bilingue** - Support complet pour le français et l'anglais
 
 </Update>
-
-## Feuille de Route
-
-### v0.2.0 - SSO & Mobile (En Cours)
-- ✅ SSO Multi-fournisseurs (Google, Microsoft, GitHub) - **TERMINÉ**
-- ✅ Gestion des Comptes Connectés - **TERMINÉ**
-- ✅ Acceptation des invitations SSO - **TERMINÉ**
-- 🚧 Design responsive mobile complet - **EN COURS**
-- 🚧 Interface de vote optimisée tactile - **EN COURS**
-- 📋 Navigation mobile avec menu hamburger - **PLANIFIÉ**
-- 📋 Optimisations de performance pour appareils mobiles - **PLANIFIÉ**
-
-### v0.3.0 - Analytique & Intelligence
-- Tableau de bord analytique avancé
-- Suivi de la vélocité d'équipe
-- Insights inter-sessions
-- Suggestions d'estimation prédictives
-- Génération de rapports PDF
-
-### Versions Futures
-- Intégration complète du système d'autorisation OpenFGA
-- Cache avancé avec Redis (invalidation de cache, stratégies TTL)
-- Implémentation de la limitation de débit (@nestjs/throttler)
-- Intégration du suivi des erreurs Sentry
-- Fonctionnalités de conformité RGPD (export, suppression de données)
-- Notifications Email et Slack
-- Intégration de visioconférence (Planning Poker)
-- Mode de vote asynchrone (Planning Poker)
-- API publique pour intégrations tierces
 
 ---
 
 <Note>
-  Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-  et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+  Vous avez des questions ou des commentaires ? Contactez-nous à [support@teamova.net](mailto:support@teamova.net)
 </Note>
