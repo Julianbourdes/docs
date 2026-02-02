@@ -20,16 +20,7 @@
       "to": "#7C3AED"
     }
   },
-  "versions": [
-    {
-      "name": "English",
-      "path": "en"
-    },
-    {
-      "name": "Français",
-      "path": "fr"
-    }
-  ],
+  "versions": ["en", "fr"],
   "topbarLinks": [
     {
       "name": "Support",
