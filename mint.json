@@ -1,0 +1,121 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Teamova Documentation",
+  "logo": {
+    "dark": "/logo/teamova-dark.svg",
+    "light": "/logo/teamova-light.svg",
+    "href": "https://teamova.com"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#8B5CF6",
+    "light": "#A78BFA",
+    "dark": "#7C3AED",
+    "background": {
+      "dark": "#0F172A",
+      "light": "#FFFFFF"
+    },
+    "anchors": {
+      "from": "#8B5CF6",
+      "to": "#7C3AED"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@teamova.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://app.teamova.com"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/teamova"
+    },
+    {
+      "name": "Linear",
+      "icon": "list-check",
+      "url": "https://linear.app/julianbourdes"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/teamova"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "index",
+        "quickstart",
+        "development"
+      ]
+    },
+    {
+      "group": "AI Tools",
+      "pages": [
+        "ai-tools/cursor",
+        "ai-tools/claude-code",
+        "ai-tools/windsurf"
+      ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoints",
+      "pages": [
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete",
+        "api-reference/endpoint/webhook"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/teamova",
+    "linkedin": "https://www.linkedin.com/company/teamova",
+    "twitter": "https://twitter.com/teamova"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "search": {
+    "prompt": "Search documentation..."
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": false
+  }
+}
