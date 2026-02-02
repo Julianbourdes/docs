@@ -40,35 +40,12 @@
     "name": "Dashboard",
     "url": "https://app.teamova.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/teamova"
-    },
-    {
-      "name": "Linear",
-      "icon": "list-check",
-      "url": "https://linear.app/julianbourdes"
-    },
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/teamova"
-    }
-  ],
   "navigation": [
     {
       "group": "Getting Started",
       "pages": [
         "introduction",
-        "quickstart"
+        "features"
       ]
     },
     {
@@ -76,23 +53,16 @@
       "pages": [
         "changelog"
       ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/teamova",
     "linkedin": "https://www.linkedin.com/company/teamova",
     "twitter": "https://twitter.com/teamova"
   },
   "feedback": {
     "thumbsRating": true,
-    "suggestEdit": true,
-    "raiseIssue": true
+    "suggestEdit": false,
+    "raiseIssue": false
   },
   "search": {
     "prompt": "Search documentation..."
