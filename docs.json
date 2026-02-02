@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "Teamova",
   "colors": {
     "primary": "#2563eb",
