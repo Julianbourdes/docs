@@ -1,0 +1,224 @@
+---
+title: Changelog
+description: 'Track all updates, improvements, and bug fixes to the Teamova platform'
+---
+
+<Update label="Unreleased" tags={["New releases", "Improvements", "Bug Fixes"]} rss={{ title: "Multi-provider SSO, Form Improvements, Documentation Overhaul" }}>
+
+## Authentication & SSO
+
+### Multi-provider SSO Integration
+Complete OAuth integration for enterprise authentication needs:
+- **Google, Microsoft, and GitHub OAuth** - Full implementation (Phase 1-5)
+- **Connected Accounts UI** - Manage multiple SSO providers in account settings
+- **SSO Account Linking/Unlinking** - Link and unlink OAuth providers from existing accounts
+- **SSO Invitation Acceptance** - Accept invitations using any configured SSO provider
+- **Set Password Feature** - Allow SSO users to set a password for password-based fallback
+- **OAuth Error Handling** - Graceful error messages on login page for OAuth failures
+- **OAuth Exception Filter** - Centralized exception handling for OAuth flows
+
+## Forms & UI Improvements
+
+### Required/Optional Indicators
+Visual indicators for form fields across all forms for better UX:
+- Organization and Team settings forms
+- Invite and Change Role modals
+- Planning Poker Jira Connection Modal
+- Account settings forms
+
+### Form Validation
+- **Better handling of optional fields** and empty values
+- **Avatar URL Field** - Fixed asterisk display and empty value persistence
+- **Double Asterisks** - Fixed duplicate required indicators
+- **Optional Field Detection** - Improved detection of optional vs required fields
+- **RadioGroup** - Removed conflicting 'required' attribute preventing form submission
+- **Text Overflow** - Fixed text wrapping issues in password signup buttons
+
+## Planning Poker
+
+### Real-time Notifications
+- **Participant Role Change Notifications** - Real-time WebSocket notifications for role updates
+- **Toast Notifications** - Invitation revocation feedback
+
+### Bug Fixes
+- **Participant Role Change Bug (JUL-210)** - Fixed cross-session participant role changes
+- **Session Naming** - Use `session.name` instead of `session.title` in logs
+- **WebSocket Broadcasting** - Fixed participant list broadcasting with comprehensive logging
+
+## Documentation (JUL-214)
+
+### Comprehensive Documentation Structure
+Complete documentation overhaul with clear organization:
+- **CLAUDE.md** - Linear, Notion, Docker, and development rules
+- **Detailed SaaS best practices** in ARCHITECTURE.md
+- **Environment configuration templates** - .env.example files for all services
+- **Clear distinction** between implemented vs planned features
+- **Documentation Cleanup** - Removed obsolete and legacy documentation files
+- **Documentation Structure** - Divided CLAUDE.md into focused sections with references
+
+## Database & Infrastructure
+
+### Migration Fixes
+- Added quotes to camelCase column names for PostgreSQL compatibility
+- Corrected enum type cast for SSO provider field
+- Explicitly disabled TypeORM logging in production
+
+### OAuth Fixes
+- **OAuth State Handling** - Fixed stateId storage and retrieval in Google, Microsoft, and GitHub OAuth flows
+- **Upstash Auto-parsing** - Handle Upstash Redis automatic JSON parsing in OAuth state retrieval
+- **JWT Token Retrieval** - Fixed JWT token extraction from cookies for SSO linking
+- **OAuth Redirect** - Return OAuth redirect URL as JSON instead of HTTP redirect
+- **API Rewrites** - Removed blocking rewrites for SSO link/unlink routes
+
+## Dependencies
+- Updated pnpm-lock.yaml with passport-microsoft and passport-github2
+
+</Update>
+
+<Update label="January 2026" tags={["New releases"]} rss={{ title: "Production Release v0.1.0 - Enterprise-Ready Platform" }}>
+
+## 🎉 Initial Production Release
+
+First production-ready release of Teamova platform, featuring:
+- **Core Authentication** - Email/password authentication with Google OAuth
+- **Planning Poker Module** - Complete enterprise-grade agile estimation tool with real-time collaboration
+- **Multi-tenancy** - Organization-based isolation with path-based routing
+- **Internationalization** - Full bilingual support (French/English)
+
+## ✨ Core Features
+
+### Session Management
+Complete session lifecycle management:
+- **Session Creation** - Create planning poker sessions with custom names and deck selection
+- **Session Codes** - Unique 6-character codes for easy session joining
+- **Session Table** - Advanced table with search, filters, sorting, and bulk operations
+- **Session Settings** - Configurable voting modes (anonymous, auto-reveal, show cards)
+- **Session Archive** - Archive completed sessions for historical tracking
+
+### Voting System
+Real-time collaborative voting:
+- **Real-time Voting** - WebSocket-based instant vote synchronization
+- **Multiple Decks** - Fibonacci, T-Shirt sizes, Powers of 2, and custom decks
+- **Vote States** - Ready → Voting → Revealed workflow with visual feedback
+- **Vote Distribution** - Real-time charts showing vote distribution and consensus
+- **Final Estimation** - Host-controlled final estimate setting with smart suggestions
+
+### Story Management
+Comprehensive story handling:
+- **Story CRUD** - Complete create, read, update, delete operations
+- **Story Details** - Rich text descriptions, type, priority, and tags
+- **Baseline Stories** - Mark reference stories for relative estimation
+- **Story Import** - Import multiple stories from Jira with metadata
+- **Story Export** - Export session results to CSV format
+
+### Participant Management
+Full participant lifecycle:
+- **Role System** - Host, Participant, and Spectator roles with appropriate permissions
+- **Role Management** - Promote/demote participants with real-time updates
+- **Participant List** - Live participant tracking with voting status
+- **Kick Functionality** - Host can remove disruptive participants
+
+### Jira Integration
+Bidirectional Jira sync:
+- **Project Import** - Browse and import stories from Jira projects
+- **Issue Sync** - Bidirectional sync of story points with Jira
+- **Smart Import** - Filter by issue type, status, and assignee
+- **Jira Settings** - Configure connection per session or globally
+
+### Custom Decks
+Flexible estimation scales:
+- **Deck Creation** - Create custom card decks with unique values
+- **Deck Templates** - Pre-built templates for common estimation scales
+- **Deck Management** - Edit, duplicate, and delete custom decks
+- **Deck Sharing** - Share custom decks across sessions
+
+### Advanced Features
+Enterprise-grade capabilities:
+- **Timer System** - Configurable voting timers with pause/resume
+- **Estimation Suggestions** - AI-powered suggestions based on story analysis
+- **Anonymous Voting** - Hide individual votes until reveal
+- **Spectator Mode** - Observer view without voting capabilities
+- **Tutorial System** - Interactive onboarding for new users
+- **Dark Mode** - Full dark theme support with system preference detection
+
+## 🏗️ Technical Implementation
+
+### Architecture
+Modern, scalable stack:
+- **Frontend** - Next.js 15 App Router with TypeScript
+- **Backend** - NestJS microservices (Core + Planning Poker) with TypeORM
+- **Database** - PostgreSQL with Redis caching
+- **Real-time** - Socket.io WebSocket implementation
+- **Monorepo** - Turborepo with pnpm workspaces
+- **UI Library** - shadcn/ui with Tailwind CSS
+- **i18n** - next-intl with cookie-based locale management
+
+### Infrastructure
+Production-ready deployment:
+- **Docker** - PostgreSQL and Redis containerization
+- **Migrations** - Complete database migration system
+- **API Documentation** - Swagger/OpenAPI specification
+- **Type Safety** - Shared TypeScript types across stack
+- **Error Handling** - Comprehensive error boundaries and fallbacks
+
+## 📊 Performance
+
+Optimized for scale:
+- **Page Load** - < 2 seconds initial load time
+- **Real-time Updates** - < 50ms WebSocket message delivery
+- **Concurrent Users** - Tested with 50+ participants per session
+- **Database** - Optimized queries with proper indexing
+
+## 🔒 Security
+
+Enterprise-grade security:
+- **Input Validation** - All API inputs validated with class-validator
+- **WebSocket Security** - Session-based authentication
+- **Data Isolation** - Proper session data isolation
+- **Rate Limiting** - Protection against abuse
+- **CORS** - Properly configured for frontend/backend communication
+
+## 🐛 Known Issues
+
+Items on the roadmap:
+- Mobile responsive design not yet optimized
+- Analytics dashboard features limited
+- OpenFGA authorization system partially implemented
+
+</Update>
+
+## Roadmap
+
+### v0.2.0 - SSO & Mobile (In Progress)
+- ✅ Multi-provider SSO (Google, Microsoft, GitHub) - **COMPLETED**
+- ✅ Connected Accounts management - **COMPLETED**
+- ✅ SSO invitation acceptance - **COMPLETED**
+- 🚧 Complete mobile responsive design - **IN PROGRESS**
+- 🚧 Touch-optimized voting interface - **IN PROGRESS**
+- 📋 Mobile navigation with hamburger menu - **PLANNED**
+- 📋 Performance optimizations for mobile devices - **PLANNED**
+
+### v0.3.0 - Analytics & Intelligence
+- Advanced analytics dashboard
+- Team velocity tracking
+- Cross-session insights
+- Predictive estimation suggestions
+- PDF report generation
+
+### Future Releases
+- Complete OpenFGA authorization system integration
+- Advanced caching with Redis (cache invalidation, TTL strategies)
+- Rate limiting implementation (@nestjs/throttler)
+- Sentry error tracking integration
+- GDPR compliance features (data export, deletion)
+- Email and Slack notifications
+- Video conferencing integration (Planning Poker)
+- Async voting mode (Planning Poker)
+- Public API for third-party integrations
+
+---
+
+<Note>
+  The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+  and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+</Note>

@@ -8,6 +8,16 @@
     "dark": "#7C3AED"
   },
   "favicon": "/favicon.ico",
+  "versions": [
+    {
+      "version": "English",
+      "directory": "en"
+    },
+    {
+      "version": "Français",
+      "directory": "fr"
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -27,10 +37,31 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          }
+        ]
       }
     ],
     "global": {
       "anchors": [
+        {
+          "anchor": "Website",
+          "href": "https://teamova.net",
+          "icon": "house"
+        },
+        {
+          "anchor": "Dashboard",
+          "href": "https://app.teamova.net",
+          "icon": "gauge"
+        },
         {
           "anchor": "Support",
           "href": "mailto:support@teamova.net",
@@ -54,17 +85,23 @@
     "dark": "/logo/teamova-dark.svg"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Dashboard",
+        "href": "https://app.teamova.net"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Get Started",
       "href": "https://app.teamova.net"
     }
   },
   "footer": {
     "socials": {
       "linkedin": "https://www.linkedin.com/company/teamova",
-      "twitter": "https://twitter.com/teamova"
+      "twitter": "https://twitter.com/teamova",
+      "website": "https://teamova.net"
     }
   }
 }
