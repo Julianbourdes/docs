@@ -1,0 +1,70 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "venus",
+  "name": "Teamova",
+  "colors": {
+    "primary": "#8B5CF6",
+    "light": "#A78BFA",
+    "dark": "#7C3AED"
+  },
+  "favicon": "/favicon.ico",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "features"
+            ]
+          },
+          {
+            "group": "What's New",
+            "pages": [
+              "changelog"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Support",
+          "href": "mailto:support@teamova.net",
+          "icon": "life-ring"
+        },
+        {
+          "anchor": "LinkedIn",
+          "href": "https://www.linkedin.com/company/teamova",
+          "icon": "linkedin"
+        },
+        {
+          "anchor": "Twitter",
+          "href": "https://twitter.com/teamova",
+          "icon": "twitter"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/teamova-light.svg",
+    "dark": "/logo/teamova-dark.svg"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.teamova.net"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/teamova",
+      "twitter": "https://twitter.com/teamova"
+    }
+  }
+}
