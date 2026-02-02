@@ -4,7 +4,7 @@
   "logo": {
     "dark": "/logo/teamova-dark.svg",
     "light": "/logo/teamova-light.svg",
-    "href": "https://teamova.com"
+    "href": "https://teamova.net"
   },
   "favicon": "/favicon.ico",
   "colors": {
@@ -24,12 +24,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@teamova.com"
+      "url": "mailto:support@teamova.net"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://app.teamova.com"
+    "url": "https://app.teamova.net"
   },
   "navigation": [
     {
