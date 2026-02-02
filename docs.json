@@ -20,9 +20,9 @@
               "href": "https://teamova.net"
             },
             {
-              "anchor": "Teamova Application",
-              "icon": "gauge",
-              "href": "https://app.teamova.net"
+              "anchor": "Status Page",
+              "icon": "circle-info",
+              "href": "https://status.teamova.net/en"
             },
             {
               "anchor": "Support",
@@ -75,9 +75,9 @@
               "href": "https://teamova.net"
             },
             {
-              "anchor": "Application Teamova",
-              "icon": "gauge",
-              "href": "https://app.teamova.net"
+              "anchor": "Page de statut",
+              "icon": "circle-info",
+              "href": "https://status.teamova.net/fr"
             },
             {
               "anchor": "Support",
