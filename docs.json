@@ -44,24 +44,6 @@
                 "pages": ["en/changelog"]
               }
             ]
-          },
-          {
-            "tab": "API Reference",
-            "groups": [
-              {
-                "group": "API Documentation",
-                "pages": ["en/api-reference/introduction"]
-              },
-              {
-                "group": "Endpoints",
-                "pages": [
-                  "en/api-reference/endpoint/create",
-                  "en/api-reference/endpoint/get",
-                  "en/api-reference/endpoint/delete",
-                  "en/api-reference/endpoint/webhook"
-                ]
-              }
-            ]
           }
         ]
       },
@@ -97,24 +79,6 @@
               {
                 "group": "Quoi de Neuf",
                 "pages": ["fr/changelog"]
-              }
-            ]
-          },
-          {
-            "tab": "Référence API",
-            "groups": [
-              {
-                "group": "Documentation API",
-                "pages": ["fr/api-reference/introduction"]
-              },
-              {
-                "group": "Endpoints",
-                "pages": [
-                  "fr/api-reference/endpoint/create",
-                  "fr/api-reference/endpoint/get",
-                  "fr/api-reference/endpoint/delete",
-                  "fr/api-reference/endpoint/webhook"
-                ]
               }
             ]
           }
