@@ -1,122 +1,111 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Teamova",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563eb",
+    "light": "#2563eb",
+    "dark": "#3b83f6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Website",
+              "icon": "house",
+              "href": "https://teamova.net"
+            },
+            {
+              "anchor": "Status Page",
+              "icon": "circle-info",
+              "href": "https://status.teamova.net/en"
+            },
+            {
+              "anchor": "Support",
+              "icon": "life-ring",
+              "href": "mailto:contact@teamova.net"
+            }
+          ]
+        },
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": ["en/introduction", "en/features"]
+              },
+              {
+                "group": "What's New",
+                "pages": ["en/changelog"]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "fr",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Site web",
+              "icon": "house",
+              "href": "https://teamova.net"
+            },
+            {
+              "anchor": "Page de statut",
+              "icon": "circle-info",
+              "href": "https://status.teamova.net/fr"
+            },
+            {
+              "anchor": "Support",
+              "icon": "life-ring",
+              "href": "mailto:contact@teamova.net"
+            }
+          ]
+        },
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Commencer",
+                "pages": ["fr/introduction", "fr/features"]
+              },
+              {
+                "group": "Quoi de Neuf",
+                "pages": ["fr/changelog"]
+              }
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/teamova-light.svg",
+    "dark": "/logo/teamova-dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "App Teamova",
+      "href": "https://app.teamova.net"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://teamova.net"
     }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "fonts": {
+    "family": "Inter"
   }
 }

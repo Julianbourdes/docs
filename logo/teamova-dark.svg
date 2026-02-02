@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="126.929 438 768.343 148" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap');
+</style>
+<path d="M191.148 439L127.929 475.5L127.929 475.531C127.929 475.531 143.75 477.97 159.554 483.25C175.358 488.53 191.148 496.656 191.148 496.656C191.148 496.656 206.937 488.531 222.741 483.25C238.545 477.97 254.366 475.531 254.366 475.531L254.366 475.5L191.148 439ZM254.366 475.531C254.366 475.531 246.731 480.264 237.116 488.438C227.501 496.611 215.893 508.221 207.991 521.906C200.089 535.591 195.885 551.364 193.648 563.719C191.41 576.073 191.148 585 191.148 585L254.366 548.5L254.366 475.531ZM191.148 585C191.148 585 190.772 576.073 188.429 563.719C186.086 551.364 181.768 535.591 173.866 521.906C165.964 508.221 154.501 496.611 144.991 488.438C135.482 480.264 127.929 475.531 127.929 475.531L127.929 548.5L191.148 585ZM191.148 460.25C197.499 460.25 202.648 465.399 202.648 471.75C202.648 478.101 197.499 483.25 191.148 483.25C184.796 483.25 179.648 478.101 179.648 471.75C179.648 465.399 184.796 460.25 191.148 460.25ZM153.929 517.938C160.28 517.938 165.429 523.086 165.429 529.438C165.429 535.789 160.28 540.937 153.929 540.938C147.578 540.938 142.429 535.789 142.429 529.438C142.429 523.086 147.578 517.937 153.929 517.938ZM228.21 517.938C234.561 517.938 239.71 523.086 239.71 529.438C239.71 535.789 234.561 540.937 228.21 540.938C221.859 540.938 216.71 535.789 216.71 529.438C216.71 523.086 221.859 517.937 228.21 517.938Z" id="Fill"/>
+</defs>
+<g id="Layer-1">
+<g opacity="1">
+<text fill="#3b83f6" font-family="'Inter', sans-serif" font-weight="600" font-size="128" opacity="1" stroke="none" text-anchor="start" transform="matrix(1 0 0 1 283.732 434.5)" x="0" y="0">
+<tspan textLength="612.339" x="0" y="124"><![CDATA[TEAMOVA]]></tspan>
+</text>
+<g opacity="1">
+<g opacity="1">
+<use fill="#3b83f6" fill-rule="nonzero" stroke="none" xlink:href="#Fill"/>
+<mask height="148" id="StrokeMask" maskUnits="userSpaceOnUse" width="128.438" x="126.929" y="438">
+<rect fill="#ffffff" height="148" stroke="none" width="128.438" x="126.929" y="438"/>
+<use fill="#000000" fill-rule="evenodd" stroke="none" xlink:href="#Fill"/>
+</mask>
+<use fill="none" mask="url(#StrokeMask)" stroke="#3b83f6" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2" xlink:href="#Fill"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

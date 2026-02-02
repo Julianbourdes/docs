@@ -1,32 +1,3 @@
----
-title: "Claude Code setup"
-description: "Configure Claude Code for your documentation workflow"
-icon: "asterisk"
----
-
-Claude Code is Anthropic's official CLI tool. This guide will help you set up Claude Code to help you write and maintain your documentation.
-
-## Prerequisites
-
-- Active Claude subscription (Pro, Max, or API access)
-
-## Setup
-
-1. Install Claude Code globally:
-
-  ```bash
-  npm install -g @anthropic-ai/claude-code
-```
-
-2. Navigate to your docs directory.
-3. (Optional) Add the `CLAUDE.md` file below to your project.
-4. Run `claude` to start.
-
-## Create `CLAUDE.md`
-
-Create a `CLAUDE.md` file at the root of your documentation repository to train Claude Code on your specific documentation standards:
-
-````markdown
 # Mintlify documentation
 
 ## Working relationship
@@ -73,4 +44,35 @@ Create a `CLAUDE.md` file at the root of your documentation repository to train 
 - Use absolute URLs for internal links
 - Include untested code examples
 - Make assumptions - always ask for clarification
-````
+
+## MCP Integration (Model Context Protocol)
+
+### Mintlify MCP Server
+
+For direct documentation interaction with Claude Code, use the Mintlify MCP server:
+
+```json
+{
+  "mintlify": {
+    "command": "npx",
+    "args": ["-y", "@mintlify/mcp-server"],
+    "description": "Mintlify documentation - search, read, and navigate documentation content"
+  }
+}
+```
+
+**Official documentation**: https://www.mintlify.com/docs/ai/model-context-protocol
+
+**Features**:
+- Search documentation content
+- Read specific documentation pages
+- Navigate documentation structure
+- Access component documentation
+
+### Future: Changelog Migration to Mintlify
+
+When migrating CHANGELOG.md to Mintlify format, reference:
+- **Mintlify Changelog Format**: https://www.mintlify.com/docs/changelog
+- **Mintlify Documentation**: https://www.mintlify.com/docs
+
+The changelog should follow Mintlify's MDX format with proper frontmatter and component usage.
