@@ -8,43 +8,72 @@
     "dark": "#7C3AED"
   },
   "favicon": "/favicon.ico",
-  "versions": [
-    {
-      "version": "English",
-      "directory": "en"
-    },
-    {
-      "version": "Français",
-      "directory": "fr"
-    }
-  ],
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "features"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "en/introduction",
+                  "en/features"
+                ]
+              },
+              {
+                "group": "What's New",
+                "pages": [
+                  "en/changelog"
+                ]
+              }
             ]
           },
           {
-            "group": "What's New",
-            "pages": [
-              "changelog"
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "language": "fr",
+        "tabs": [
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Commencer",
+                "pages": [
+                  "fr/introduction",
+                  "fr/features"
+                ]
+              },
+              {
+                "group": "Quoi de Neuf",
+                "pages": [
+                  "fr/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Référence API",
+            "groups": [
+              {
+                "group": "Documentation API",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              }
             ]
           }
         ]
@@ -86,14 +115,6 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "EN",
-        "href": "/en/introduction"
-      },
-      {
-        "label": "FR",
-        "href": "/fr/introduction"
-      },
       {
         "label": "Dashboard",
         "href": "https://app.teamova.net"
