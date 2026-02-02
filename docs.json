@@ -12,6 +12,25 @@
     "languages": [
       {
         "language": "en",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Website",
+              "icon": "house",
+              "href": "https://teamova.net"
+            },
+            {
+              "anchor": "Teamova Application",
+              "icon": "gauge",
+              "href": "https://app.teamova.net"
+            },
+            {
+              "anchor": "Support",
+              "icon": "life-ring",
+              "href": "mailto:contact@teamova.net"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "Documentation",
@@ -46,6 +65,25 @@
       },
       {
         "language": "fr",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Site web",
+              "icon": "house",
+              "href": "https://teamova.net"
+            },
+            {
+              "anchor": "Application Teamova",
+              "icon": "gauge",
+              "href": "https://app.teamova.net"
+            },
+            {
+              "anchor": "Support",
+              "icon": "life-ring",
+              "href": "mailto:contact@teamova.net"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "Documentation",
@@ -78,36 +116,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://teamova.net",
-          "icon": "house"
-        },
-        {
-          "anchor": "Dashboard",
-          "href": "https://app.teamova.net",
-          "icon": "gauge"
-        },
-        {
-          "anchor": "Support",
-          "href": "mailto:support@teamova.net",
-          "icon": "life-ring"
-        },
-        {
-          "anchor": "LinkedIn",
-          "href": "https://www.linkedin.com/company/teamova",
-          "icon": "linkedin"
-        },
-        {
-          "anchor": "Twitter",
-          "href": "https://twitter.com/teamova",
-          "icon": "twitter"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/teamova-light.svg",
