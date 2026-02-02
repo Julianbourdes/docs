@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Teamova",
   "colors": {
-    "primary": "#8B5CF6",
-    "light": "#A78BFA",
-    "dark": "#7C3AED"
+    "primary": "#2563eb",
+    "light": "#2563eb",
+    "dark": "#3b83f6"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -116,7 +116,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Dashboard",
+        "label": "App Teamova",
         "href": "https://app.teamova.net"
       }
     ],
@@ -128,9 +128,21 @@
   },
   "footer": {
     "socials": {
-      "linkedin": "https://www.linkedin.com/company/teamova",
       "twitter": "https://twitter.com/teamova",
       "website": "https://teamova.net"
     }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "fonts": {
+    "family": "Inter"
+  },
+  "banner": {
+    "dismissible": false,
+    "content": "Application Teamova"
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
