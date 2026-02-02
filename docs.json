@@ -87,6 +87,14 @@
   "navbar": {
     "links": [
       {
+        "label": "EN",
+        "href": "/en/introduction"
+      },
+      {
+        "label": "FR",
+        "href": "/fr/introduction"
+      },
+      {
         "label": "Dashboard",
         "href": "https://app.teamova.net"
       }
