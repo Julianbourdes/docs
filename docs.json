@@ -37,16 +37,11 @@
             "groups": [
               {
                 "group": "Getting Started",
-                "pages": [
-                  "en/introduction",
-                  "en/features"
-                ]
+                "pages": ["en/introduction", "en/features"]
               },
               {
                 "group": "What's New",
-                "pages": [
-                  "en/changelog"
-                ]
+                "pages": ["en/changelog"]
               }
             ]
           },
@@ -56,7 +51,16 @@
               {
                 "group": "API Documentation",
                 "pages": [
-                  "api-reference/introduction"
+                  "en/api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "en/api-reference/endpoint/create",
+                  "en/api-reference/endpoint/get",
+                  "en/api-reference/endpoint/delete",
+                  "en/api-reference/endpoint/webhook"
                 ]
               }
             ]
@@ -90,16 +94,11 @@
             "groups": [
               {
                 "group": "Commencer",
-                "pages": [
-                  "fr/introduction",
-                  "fr/features"
-                ]
+                "pages": ["fr/introduction", "fr/features"]
               },
               {
                 "group": "Quoi de Neuf",
-                "pages": [
-                  "fr/changelog"
-                ]
+                "pages": ["fr/changelog"]
               }
             ]
           },
@@ -109,7 +108,16 @@
               {
                 "group": "Documentation API",
                 "pages": [
-                  "api-reference/introduction"
+                  "fr/api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "fr/api-reference/endpoint/create",
+                  "fr/api-reference/endpoint/get",
+                  "fr/api-reference/endpoint/delete",
+                  "fr/api-reference/endpoint/webhook"
                 ]
               }
             ]
@@ -137,7 +145,6 @@
   },
   "footer": {
     "socials": {
-      "twitter": "https://twitter.com/teamova",
       "website": "https://teamova.net"
     }
   },
@@ -146,12 +153,5 @@
   },
   "fonts": {
     "family": "Inter"
-  },
-  "banner": {
-    "dismissible": false,
-    "content": "Application Teamova"
-  },
-  "icons": {
-    "library": "lucide"
   }
 }
