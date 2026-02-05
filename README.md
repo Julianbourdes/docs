@@ -1,45 +1,86 @@
-# Mintlify Starter Kit
+# Teamova Documentation
 
-This is a mintlify starter kit for the Teamova documentation.
+Documentation officielle de Teamova, la plateforme SaaS innovante pour le management humain et la collaboration d'équipe.
 
-Use the starter kit to get your docs deployed and ready to customize.
+## 🎯 À propos
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Ce dépôt contient la documentation utilisateur complète de Teamova, construite avec [Mintlify](https://mintlify.com). La documentation est disponible en français et en anglais.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Teamova propose une suite d'outils collaboratifs pour transformer le management d'équipe : Planning Poker, One-to-One, Squad Health Check et bien plus encore.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+**Accès à la documentation** : [docs.teamova.net](https://docs.teamova.net)
 
-## Development
+## 🌍 Langues supportées
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- 🇫🇷 Français (`/fr`)
+- 🇬🇧 English (`/en`)
 
-```
+## 📚 Contenu
+
+- **Introduction** : Découvrir Teamova et ses fonctionnalités principales
+- **Fonctionnalités** : Guide détaillé des fonctionnalités disponibles
+- **Changelog** : Historique des mises à jour et nouvelles fonctionnalités
+- **Référence API** : Documentation de l'API Teamova (à venir)
+
+## 🛠️ Développement local
+
+### Prérequis
+
+Installer le [CLI Mintlify](https://www.npmjs.com/package/mint) :
+
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+### Lancer le serveur de développement
 
-```
+À la racine du projet, où se trouve `docs.json` :
+
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+La documentation sera accessible sur `http://localhost:3000`.
 
-## Publishing changes
+### Mise à jour du CLI
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Si le serveur ne démarre pas correctement :
 
-## Need help?
+```bash
+mint update
+```
 
-### Troubleshooting
+## 📝 Structure du projet
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+```
+docs/
+├── docs.json           # Configuration Mintlify (navigation, thème, etc.)
+├── en/                 # Documentation anglaise
+│   ├── introduction.mdx
+│   ├── features.mdx
+│   ├── changelog.mdx
+│   └── api-reference/
+├── fr/                 # Documentation française
+│   ├── introduction.mdx
+│   ├── features.mdx
+│   ├── changelog.mdx
+│   └── api-reference/
+└── logo/               # Logos Teamova (light/dark)
+```
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+## 🚀 Déploiement
+
+Les changements poussés sur la branche `main` sont automatiquement déployés en production via l'application GitHub de Mintlify.
+
+Pour configurer le déploiement automatique, installer l'app depuis le [dashboard Mintlify](https://dashboard.mintlify.com/settings/organization/github-app).
+
+## 🔗 Liens utiles
+
+- **Site web** : [teamova.net](https://teamova.net)
+- **Application** : [app.teamova.net](https://app.teamova.net)
+- **Page de statut** : [status.teamova.net](https://status.teamova.net)
+- **Documentation Mintlify** : [mintlify.com/docs](https://mintlify.com/docs)
+
+## 📧 Support
+
+Des questions ? Contactez-nous à [contact@teamova.net](mailto:contact@teamova.net)
